@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:elevation="5dp"
+        android:text="Username"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Password"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usn" />
+
+
+    <EditText
+        android:id="@+id/usn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/my_shape_drawables"
+        android:elevation="5dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="7.5sp"
+        android:paddingBottom="7.5sp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/my_shape_drawables"
+        android:paddingLeft="5dp"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/ccid"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/my_shape_drawables"
+        android:hint="CodeChef id"
+        android:paddingLeft="15dp"
+        android:paddingTop="7.5sp"
+        android:paddingBottom="7.5sp"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cfid"
+        app:layout_constraintEnd_toStartOf="@+id/cfid"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/cfid"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/my_shape_drawables"
+        android:hint="Codeforces id"
+        android:paddingLeft="15dp"
+        android:paddingTop="7.5sp"
+        android:paddingBottom="7.5sp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass" />
+
+    <EditText
+        android:id="@+id/lcid"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_shape_drawables"
+        android:hint="LeetCode  id"
+        android:paddingLeft="15dp"
+        android:paddingTop="7.5sp"
+        android:paddingBottom="7.5sp"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/gfgid"
+        app:layout_constraintEnd_toStartOf="@+id/gfgid"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="@+id/ccid" />
+
+    <EditText
+        android:id="@+id/gfgid"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/my_shape_drawables"
+        android:hint="Geeks for Geeks id"
+        android:paddingLeft="15dp"
+        android:paddingTop="7.5sp"
+        android:paddingBottom="7.5sp"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/cfid"
+        app:layout_constraintTop_toBottomOf="@+id/cfid" />
+
+    <EditText
+        android:id="@+id/gitid"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/my_shape_drawables"
+        android:hint="Github id"
+        android:paddingLeft="15dp"
+        android:paddingTop="7.5sp"
+        android:paddingBottom="7.5sp"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/gfgid"
+        app:layout_constraintTop_toBottomOf="@+id/gfgid" />
+
+    <EditText
+        android:id="@+id/hackid"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/my_shape_drawables"
+        android:hint="Hackerrank id"
+        android:paddingLeft="15dp"
+        android:paddingTop="7.5sp"
+        android:paddingBottom="7.5sp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cnid" />
+
+    <EditText
+        android:id="@+id/cnid"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_shape_drawables"
+        android:hint="Coding Ninja id"
+        android:paddingLeft="15dp"
+        android:paddingTop="7.5sp"
+        android:paddingBottom="7.5sp"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/gitid"
+        app:layout_constraintStart_toStartOf="@+id/lcid" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="44dp"
+        android:background="@drawable/my_shape_drawables"
+        android:text="sign up"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hackid" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
